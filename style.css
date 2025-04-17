@@ -16,7 +16,7 @@
 body {
   font-family: Arial, sans‑serif;
   line-height: 1.6;
-  background-color: var(--bg);  /* Fundo da página */
+  background-color: var(--bg);
   color: var(--text);
 }
 
@@ -25,7 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--gold); /* Cor do fundo do cabeçalho */
+  background-color: var(--gold);
   padding: 10px 20px;
   position: relative;
   z-index: 1000;
@@ -87,12 +87,10 @@ nav ul li .submenu li a {
   color: white;
 }
 
-
-
 /* ===== Hero ===== */
 .hero {
   position: relative;
-  height: 500px;
+  height: 560px;
   background: url('banner.jpg') no-repeat center/cover;
   display: flex;
   align-items: center;
@@ -113,23 +111,23 @@ nav ul li .submenu li a {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: .5rem;
 }
 
 .hero h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: .5rem;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 /* ===== Seções Gerais ===== */
 section {
-  background: white; /* Fundo branco para as seções */
+  background: white;
   padding: 40px 20px;
   max-width: 900px;
   margin: 20px auto;
@@ -182,7 +180,7 @@ section li {
 .whatsapp {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #25d366;  /* Cor do botão WhatsApp */
+  background-color: #25d366;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -193,10 +191,9 @@ section li {
 
 .whatsapp-btn:hover,
 .whatsapp:hover {
-  background-color: #128c7e; /* Cor do botão WhatsApp ao passar o mouse */
+  background-color: #128c7e;
 }
 
-/* Posição fixa do botão flutuante */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -227,9 +224,8 @@ section li {
 
 /* ===== Departamentos ===== */
 #departamentos {
-  background-color: #ffffff; /* Corrigido para branco */
+  background-color: #ffffff;
 }
-
 
 #departamentos ul {
   list-style: none;
@@ -300,7 +296,7 @@ section li {
 
 /* ===== Rodapé ===== */
 footer.rodape {
-  background-color: var(--gold); /* Cor de fundo do rodapé */
+  background-color: var(--gold);
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -330,20 +326,20 @@ footer p {
 }
 
 footer p a {
-  color: white; /* Link branco */
-  text-decoration: none; /* Sem sublinhado */
+  color: white;
+  text-decoration: none;
 }
 
 footer p a:hover {
-  text-decoration: underline; /* Sublinha o link ao passar o mouse */
+  text-decoration: underline;
 }
 
 /* ===== Responsividade ===== */
 @media (max-width: 768px) {
-  /* Menu mobile */
   nav .menu-toggle {
     display: block;
   }
+
   nav ul {
     display: none;
     flex-direction: column;
@@ -351,9 +347,11 @@ footer p a:hover {
     width: 100%;
     margin-top: 10px;
   }
+
   nav ul.show {
     display: flex;
   }
+
   nav ul li {
     margin: 10px 0;
     text-align: center;
@@ -361,19 +359,19 @@ footer p a:hover {
 
   /* Hero ajustado */
   .hero {
-    height: 300px;
+    height: 400px;
+    background-position: center top;
   }
 
-  /* Seções mais enxutas no mobile */
   section {
     margin: 10px;
     padding: 30px 15px;
   }
 
-  /* Ações Sociais */
   .whatsapp-btn {
     width: 100%;
   }
+
   #acoes-sociais .qr-img {
     width: 120px;
     height: 120px;
